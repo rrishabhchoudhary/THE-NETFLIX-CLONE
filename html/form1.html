@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script>
+     function validateForm() {
+      var x = document.myform.fname;
+      var y = document.myform.lname;
+      var z = document.myform.email;
+      var v = document.myform.password;
+      if (x.value == "") {
+      alert("FName must be filled out");
+      return false;
+      }
+      if (y.value == "") {
+        alert("LName must be filled out");
+        return false;
+      } else if (z.value == "") {
+        alert("email must be filled out");
+        return false;
+      } else if (v.value.length < 8||v.value.length > 10) {
+        alert("password length is not acceptable");
+        return false;
+      }
+      
+      return true;
+    }
+  </script>
+  <body id="signup">
+
+    <header>
+      <div class="netflixlogo">
+        <a id="logo" href="#top">
+          <img src="../imgs/logo.PNG" alt="netflix logo"
+        /></a>
+      </div>
+        <nav class="main-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+    
+    <h2>SIGN UP</h2>
+    <form
+      name="myform"
+      action="mysqlconnect.php"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <!-- post method is secure as compared to get as get method puts the info the url -->
+      <label for="fname" id="form">FIRST NAME</label>
+      <input type="text" name="fname" />
+      <br /><br />
+      <label for="lname" id="form">LAST NAME</label>
+      <input type="text" name="lname" />
+      <br /><br />
+      <label for="email" id="form">EMAIL</label>
+      <input type="email" name="email" />
+      <br /><br />
+      <label for="password" id="form">PASSWORD</label>
+      <input type="password" name="password" />
+      <br /><br />
+      <label for="DOB" id="form">DATE OF BIRTH</label>
+      <input type="date" name="DOB" />
+      <br /><br />
+      <input type="submit" value="submit" />
+    </form>
+    
+    <h4>Already have an account? <a href="form2.html">LOG IN</a></h4>
+
+    <br>
+    <hr>
+    <footer>
+      <br>
+      <div id="foot">
+        <a href="">About us</a>
+      </div>
+      <br>
+      <div id="foot">
+        <a href="">Contact us</a>
+      </div>
+      <br>
+      <div id="foot">
+        <a href="">Help centre</a>
+      </div>
+      <br>
+      <div id="foot">
+        <a href="">Media centre</a>
+      </div>
+    </footer>
+  </body>
+</html>

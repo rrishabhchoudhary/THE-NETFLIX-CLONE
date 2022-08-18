@@ -1,0 +1,49 @@
+.nav-right{
+    float: right;
+    text-align: right;
+}
+a:hover{
+    color:green;
+}
+a{
+    color: white;
+}
+a:visited{
+    color: aqua;
+}
+.zoom {
+    transition: transform .2s; 
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); 
+  }
+  
+#foot{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+h4{
+    color: white;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+form{
+    color: white;
+    text-align: center;
+}
+#signup {
+    background-image:url(https://store-images.s-microsoft.com/image/apps.47842.9007199266246365.2a2d31fe-dc82-41b6-9774-9ce54b027860.e16db4e0-8f09-444d-8119-15dc01401ba2?mode=scale&q=90&h=1080&w=1920) ;
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
